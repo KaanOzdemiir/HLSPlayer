@@ -3,23 +3,25 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D7E180E31B3CB9B7F1CBF91 /* Pods_HLSPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A09D51FD941E5B4ED75583BD /* Pods_HLSPlayer.framework */; };
 		F72800CD25EFE26E00F6D5DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72800CC25EFE26E00F6D5DC /* AppDelegate.swift */; };
-		F72800CF25EFE26E00F6D5DC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72800CE25EFE26E00F6D5DC /* SceneDelegate.swift */; };
-		F72800D125EFE26E00F6D5DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72800D025EFE26E00F6D5DC /* ViewController.swift */; };
+		F72800D125EFE26E00F6D5DC /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72800D025EFE26E00F6D5DC /* HomeVC.swift */; };
 		F72800D425EFE26E00F6D5DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F72800D225EFE26E00F6D5DC /* Main.storyboard */; };
 		F72800D625EFE27200F6D5DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F72800D525EFE27200F6D5DC /* Assets.xcassets */; };
 		F72800D925EFE27200F6D5DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F72800D725EFE27200F6D5DC /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		17AAFB1A6616FC0FEEC56677 /* Pods-HLSPlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HLSPlayer.debug.xcconfig"; path = "Target Support Files/Pods-HLSPlayer/Pods-HLSPlayer.debug.xcconfig"; sourceTree = "<group>"; };
+		286330B7638ED8BB9399F2D0 /* Pods-HLSPlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HLSPlayer.release.xcconfig"; path = "Target Support Files/Pods-HLSPlayer/Pods-HLSPlayer.release.xcconfig"; sourceTree = "<group>"; };
+		A09D51FD941E5B4ED75583BD /* Pods_HLSPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HLSPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F72800C925EFE26E00F6D5DC /* HLSPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HLSPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F72800CC25EFE26E00F6D5DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F72800CE25EFE26E00F6D5DC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F72800D025EFE26E00F6D5DC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F72800D025EFE26E00F6D5DC /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		F72800D325EFE26E00F6D5DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F72800D525EFE27200F6D5DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F72800D825EFE27200F6D5DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -31,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D7E180E31B3CB9B7F1CBF91 /* Pods_HLSPlayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		75529E18F9D6C5AC648EC471 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				17AAFB1A6616FC0FEEC56677 /* Pods-HLSPlayer.debug.xcconfig */,
+				286330B7638ED8BB9399F2D0 /* Pods-HLSPlayer.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F64F87AC30CD849EC72D8958 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A09D51FD941E5B4ED75583BD /* Pods_HLSPlayer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F72800C025EFE26E00F6D5DC = {
 			isa = PBXGroup;
 			children = (
 				F72800CB25EFE26E00F6D5DC /* HLSPlayer */,
 				F72800CA25EFE26E00F6D5DC /* Products */,
+				75529E18F9D6C5AC648EC471 /* Pods */,
+				F64F87AC30CD849EC72D8958 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +78,46 @@
 		F72800CB25EFE26E00F6D5DC /* HLSPlayer */ = {
 			isa = PBXGroup;
 			children = (
-				F72800CC25EFE26E00F6D5DC /* AppDelegate.swift */,
-				F72800CE25EFE26E00F6D5DC /* SceneDelegate.swift */,
-				F72800D025EFE26E00F6D5DC /* ViewController.swift */,
 				F72800D225EFE26E00F6D5DC /* Main.storyboard */,
+				F72800E625EFE2AD00F6D5DC /* ViewModel */,
+				F72800E525EFE2A600F6D5DC /* View */,
+				F72800E425EFE2A100F6D5DC /* Model */,
+				F72800E225EFE29800F6D5DC /* Supporting Files */,
+			);
+			path = HLSPlayer;
+			sourceTree = "<group>";
+		};
+		F72800E225EFE29800F6D5DC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F72800CC25EFE26E00F6D5DC /* AppDelegate.swift */,
 				F72800D525EFE27200F6D5DC /* Assets.xcassets */,
 				F72800D725EFE27200F6D5DC /* LaunchScreen.storyboard */,
 				F72800DA25EFE27200F6D5DC /* Info.plist */,
 			);
-			path = HLSPlayer;
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F72800E425EFE2A100F6D5DC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F72800E525EFE2A600F6D5DC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F72800D025EFE26E00F6D5DC /* HomeVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F72800E625EFE2AD00F6D5DC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +127,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F72800DD25EFE27200F6D5DC /* Build configuration list for PBXNativeTarget "HLSPlayer" */;
 			buildPhases = (
+				4D3750D7E9EFBD19152F7F06 /* [CP] Check Pods Manifest.lock */,
 				F72800C525EFE26E00F6D5DC /* Sources */,
 				F72800C625EFE26E00F6D5DC /* Frameworks */,
 				F72800C725EFE26E00F6D5DC /* Resources */,
+				3A9CFBE1F9F76A5D09246471 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,14 +187,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3A9CFBE1F9F76A5D09246471 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HLSPlayer/Pods-HLSPlayer-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HLSPlayer/Pods-HLSPlayer-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HLSPlayer/Pods-HLSPlayer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4D3750D7E9EFBD19152F7F06 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HLSPlayer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F72800C525EFE26E00F6D5DC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F72800D125EFE26E00F6D5DC /* ViewController.swift in Sources */,
+				F72800D125EFE26E00F6D5DC /* HomeVC.swift in Sources */,
 				F72800CD25EFE26E00F6D5DC /* AppDelegate.swift in Sources */,
-				F72800CF25EFE26E00F6D5DC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,12 +379,13 @@
 		};
 		F72800DE25EFE27200F6D5DC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17AAFB1A6616FC0FEEC56677 /* Pods-HLSPlayer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8ZB49XM27T;
-				INFOPLIST_FILE = HLSPlayer/Info.plist;
+				INFOPLIST_FILE = "HLSPlayer/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,12 +399,13 @@
 		};
 		F72800DF25EFE27200F6D5DC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 286330B7638ED8BB9399F2D0 /* Pods-HLSPlayer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8ZB49XM27T;
-				INFOPLIST_FILE = HLSPlayer/Info.plist;
+				INFOPLIST_FILE = "HLSPlayer/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
