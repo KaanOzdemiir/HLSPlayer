@@ -1,0 +1,122 @@
+{\rtf1\ansi\ansicpg1254\cocoartf2577
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 #####\
+# OS X temporary files that should never be committed\
+.DS_Store\
+*.swp\
+*.lock\
+profile\
+\
+#####\
+# DotEnv files\
+.env\
+\
+####\
+# Xcode temporary files that should never be committed\
+*~.nib\
+\
+####\
+# Objective-C/Swift specific\
+*.hmap\
+*.ipa\
+\
+####\
+# Xcode build files\
+DerivedData/\
+build/\
+Builds/\
+\
+#####\
+# Xcode private settings (window sizes, bookmarks, breakpoints, custom executables, smart groups)\
+*.pbxuser\
+*.mode1v3\
+*.mode2v3\
+*.perspectivev3\
+!default.pbxuser\
+!default.mode1v3\
+!default.mode2v3\
+!default.perspectivev3\
+\
+####\
+# Xcode 4\
+xcuserdata\
+!xcschemes\
+# Xcode 4\
+*.moved-aside\
+\
+####\
+# XCode 4 workspaces - more detailed\
+!xcshareddata\
+!default.xcworkspace\
+*.xcworkspacedata\
+\
+\
+####\
+# Xcode 5\
+*.xccheckout\
+*.xcuserstate\
+\
+####\
+# Xcode 7\
+*.xcscmblueprint\
+\
+####\
+# AppCode\
+.idea/\
+\
+####\
+# Other Xcode files\
+profile\
+*.hmap\
+*.ipa\
+\
+\
+## App packaging\
+*.dSYM.zip\
+*.dSYM\
+*.cer\
+*.certSigningRequest\
+*.p12\
+*.mobileprovision\
+*.pem\
+*.pkey\
+\
+####\
+# CocoaPods\
+Pods/\
+!Podfile\
+!Podfile.lock\
+\
+####\
+# Carthage\
+Carthage/Build.rbenv-vars\
+!Cartfile\
+!Cartfile.private\
+!Cartfile.resolved\
+\
+####\
+# Fastlane\
+# Temporary profiling data\
+/fastlane/report.xml\
+# Deliver temporary error output\
+/fastlane/Error*.png\
+# Deliver temporary preview output\
+/fastlane/Preview.html\
+# Snapshot generated screenshots\
+/fastlane/screenshots/*/*-portrait.png\
+/fastlane/screenshots/*/*-landscape.png\
+/fastlane/screenshots/screenshots.html\
+# Frameit generated screenshots\
+/fastlane/screenshots/*/*-portrait_framed.png\
+/fastlane/screenshots/*/*-landscape_framed.png\
+\
+####\
+# rbenv\
+.rbenv-vars\
+\
+}

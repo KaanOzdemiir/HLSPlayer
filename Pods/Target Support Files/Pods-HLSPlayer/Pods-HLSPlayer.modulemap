@@ -1,0 +1,6 @@
+framework module Pods_HLSPlayer {
+  umbrella header "Pods-HLSPlayer-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,52 @@
+PODS:
+  - Alamofire (5.0.0-rc.2)
+  - AlamofireNetworkActivityLogger (3.0.0):
+    - Alamofire (~> 5.0.0-rc.2)
+  - AlamofireObjectMapper (6.2.0):
+    - Alamofire (= 5.0.0-rc.2)
+    - ObjectMapper (~> 3.5.1)
+  - lottie-ios (3.2.1)
+  - ObjectMapper (3.5.3)
+  - ReachabilitySwift (5.0.0)
+  - RxCocoa (5.1.1):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.1.1):
+    - RxSwift (~> 5)
+  - RxSwift (5.1.1)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.0.0-rc.2)
+  - AlamofireNetworkActivityLogger
+  - AlamofireObjectMapper
+  - lottie-ios
+  - ReachabilitySwift
+  - RxCocoa (~> 5.1)
+  - RxSwift (~> 5.1)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - AlamofireNetworkActivityLogger
+    - AlamofireObjectMapper
+    - lottie-ios
+    - ObjectMapper
+    - ReachabilitySwift
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+
+SPEC CHECKSUMS:
+  Alamofire: f9450d3c7f6bea2ad62e7a541c3e9b186c7991d6
+  AlamofireNetworkActivityLogger: 94e8a7d454a4a9800cef1d0c1d3699754493684b
+  AlamofireObjectMapper: 74d1440c92c42bbcc2b5f4dc81654ac095ec669f
+  lottie-ios: 106e92eaf11fbed0a76590b4cdb9b5ec26123ff7
+  ObjectMapper: 97111c97e054a6ee25917662106689f0b4127b37
+  ReachabilitySwift: 985039c6f7b23a1da463388634119492ff86c825
+  RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
+  RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
+  RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
+
+PODFILE CHECKSUM: b24ccd1446a4700c719f23b519b537b91ab007c8
+
+COCOAPODS: 1.10.1

@@ -13,6 +13,17 @@
 		F72800D425EFE26E00F6D5DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F72800D225EFE26E00F6D5DC /* Main.storyboard */; };
 		F72800D625EFE27200F6D5DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F72800D525EFE27200F6D5DC /* Assets.xcassets */; };
 		F72800D925EFE27200F6D5DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F72800D725EFE27200F6D5DC /* LaunchScreen.storyboard */; };
+		F72800F625F0083F00F6D5DC /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72800F525F0083F00F6D5DC /* HomeViewModel.swift */; };
+		F72800FA25F00A1700F6D5DC /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72800F925F00A1700F6D5DC /* AppRouter.swift */; };
+		F72800FF25F00B0900F6D5DC /* PlayerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72800FE25F00B0900F6D5DC /* PlayerVC.swift */; };
+		F728010225F00BB000F6D5DC /* PlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F728010125F00BB000F6D5DC /* PlayerViewModel.swift */; };
+		F728010D25F0174700F6D5DC /* PlayerControlVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F728010C25F0174700F6D5DC /* PlayerControlVC.swift */; };
+		F728011625F1708200F6D5DC /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F728011525F1708200F6D5DC /* Extensions.swift */; };
+		F728011C25F1739F00F6D5DC /* lottie_no_connection.json in Resources */ = {isa = PBXBuildFile; fileRef = F728011B25F1739F00F6D5DC /* lottie_no_connection.json */; };
+		F728011F25F173BE00F6D5DC /* NoConnectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F728011E25F173BE00F6D5DC /* NoConnectionVC.swift */; };
+		F728012225F1747600F6D5DC /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F728012125F1747600F6D5DC /* BaseVC.swift */; };
+		F728012525F176E200F6D5DC /* PlayerControlViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F728012425F176E200F6D5DC /* PlayerControlViewModel.swift */; };
+		F728012825F17AC600F6D5DC /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = F728012725F17AC600F6D5DC /* Enums.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +37,17 @@
 		F72800D525EFE27200F6D5DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F72800D825EFE27200F6D5DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F72800DA25EFE27200F6D5DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F72800F525F0083F00F6D5DC /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		F72800F925F00A1700F6D5DC /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		F72800FE25F00B0900F6D5DC /* PlayerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerVC.swift; sourceTree = "<group>"; };
+		F728010125F00BB000F6D5DC /* PlayerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewModel.swift; sourceTree = "<group>"; };
+		F728010C25F0174700F6D5DC /* PlayerControlVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerControlVC.swift; sourceTree = "<group>"; };
+		F728011525F1708200F6D5DC /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		F728011B25F1739F00F6D5DC /* lottie_no_connection.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lottie_no_connection.json; sourceTree = "<group>"; };
+		F728011E25F173BE00F6D5DC /* NoConnectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoConnectionVC.swift; sourceTree = "<group>"; };
+		F728012125F1747600F6D5DC /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
+		F728012425F176E200F6D5DC /* PlayerControlViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerControlViewModel.swift; sourceTree = "<group>"; };
+		F728012725F17AC600F6D5DC /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,10 +101,13 @@
 			isa = PBXGroup;
 			children = (
 				F72800D225EFE26E00F6D5DC /* Main.storyboard */,
+				F72800F825F00A0C00F6D5DC /* AppRouter */,
 				F72800E625EFE2AD00F6D5DC /* ViewModel */,
 				F72800E525EFE2A600F6D5DC /* View */,
 				F72800E425EFE2A100F6D5DC /* Model */,
+				F728011925F1737F00F6D5DC /* Resources */,
 				F72800E225EFE29800F6D5DC /* Supporting Files */,
+				F728011425F1707600F6D5DC /* Helper */,
 			);
 			path = HLSPlayer;
 			sourceTree = "<group>";
@@ -108,7 +133,11 @@
 		F72800E525EFE2A600F6D5DC /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F728012125F1747600F6D5DC /* BaseVC.swift */,
+				F728011E25F173BE00F6D5DC /* NoConnectionVC.swift */,
 				F72800D025EFE26E00F6D5DC /* HomeVC.swift */,
+				F72800FE25F00B0900F6D5DC /* PlayerVC.swift */,
+				F728010C25F0174700F6D5DC /* PlayerControlVC.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -116,8 +145,36 @@
 		F72800E625EFE2AD00F6D5DC /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				F72800F525F0083F00F6D5DC /* HomeViewModel.swift */,
+				F728010125F00BB000F6D5DC /* PlayerViewModel.swift */,
+				F728012425F176E200F6D5DC /* PlayerControlViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F72800F825F00A0C00F6D5DC /* AppRouter */ = {
+			isa = PBXGroup;
+			children = (
+				F72800F925F00A1700F6D5DC /* AppRouter.swift */,
+			);
+			path = AppRouter;
+			sourceTree = "<group>";
+		};
+		F728011425F1707600F6D5DC /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				F728011525F1708200F6D5DC /* Extensions.swift */,
+				F728012725F17AC600F6D5DC /* Enums.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		F728011925F1737F00F6D5DC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F728011B25F1739F00F6D5DC /* lottie_no_connection.json */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,6 +237,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F72800D925EFE27200F6D5DC /* LaunchScreen.storyboard in Resources */,
+				F728011C25F1739F00F6D5DC /* lottie_no_connection.json in Resources */,
 				F72800D625EFE27200F6D5DC /* Assets.xcassets in Resources */,
 				F72800D425EFE26E00F6D5DC /* Main.storyboard in Resources */,
 			);
@@ -234,8 +292,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F728010225F00BB000F6D5DC /* PlayerViewModel.swift in Sources */,
+				F728011625F1708200F6D5DC /* Extensions.swift in Sources */,
+				F72800FA25F00A1700F6D5DC /* AppRouter.swift in Sources */,
+				F728012525F176E200F6D5DC /* PlayerControlViewModel.swift in Sources */,
 				F72800D125EFE26E00F6D5DC /* HomeVC.swift in Sources */,
+				F728010D25F0174700F6D5DC /* PlayerControlVC.swift in Sources */,
+				F72800F625F0083F00F6D5DC /* HomeViewModel.swift in Sources */,
+				F728011F25F173BE00F6D5DC /* NoConnectionVC.swift in Sources */,
 				F72800CD25EFE26E00F6D5DC /* AppDelegate.swift in Sources */,
+				F72800FF25F00B0900F6D5DC /* PlayerVC.swift in Sources */,
+				F728012825F17AC600F6D5DC /* Enums.swift in Sources */,
+				F728012225F1747600F6D5DC /* BaseVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
